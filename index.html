@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; script-src 'self'">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Project Cost Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <div>
+        <h1>Вартість проєкту</h1>
+        <p class="sub">Вкажіть години та рейт для кожної ролі. Підсумок оновлюється одразу.</p>
+      </div>
+      <button id="reset" class="ghost" type="button">Очистити</button>
+    </header>
+
+    <section class="panel" aria-label="Ролі">
+      <div class="head row">
+        <span>Роль</span><span>Години</span><span>Рейт, $/год</span><span class="right">Сума</span>
+      </div>
+      <div id="rows"></div>
+    </section>
+
+    <section class="result" aria-live="polite">
+      <div class="total-block">
+        <span class="label">Разом із буфером</span>
+        <strong id="total" class="total">$0</strong>
+        <div id="bar" class="bar" role="img" aria-label="Частка кожної ролі у вартості"></div>
+        <ul id="legend" class="legend"></ul>
+      </div>
+
+      <dl class="breakdown">
+        <div><dt>Годин усього</dt><dd id="hours">0</dd></div>
+        <div><dt>Вартість робіт</dt><dd id="subtotal">$0</dd></div>
+        <div class="buffer">
+          <dt><label for="buffer">Буфер, %</label></dt>
+          <dd><input id="buffer" type="number" min="0" step="1" value="10" inputmode="decimal"></dd>
+        </div>
+        <div><dt>Сума буфера</dt><dd id="bufferAmount">$0</dd></div>
+      </dl>
+    </section>
+  </main>
+  <script src="renderer.js"></script>
+</body>
+</html>
