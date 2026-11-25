@@ -1,47 +1,47 @@
 # Project Cost Calculator
 
-**Тестовий продукт для резюме (CV)** — автономний десктопний калькулятор швидкої оцінки вартості IT-проєктів. Проєкт створено як практичний кейс, щоб продемонструвати повний цикл розробки робочого інструменту для проєктного менеджера за допомогою AI (**Claude** та **Gemini**): від формування продуктової логіки до публікації готових інсталяторів під macOS і Windows.
+**Portfolio Test Product for CV** — an offline desktop calculator for quick IT project cost estimation. Created as a hands-on case study to demonstrate the end-to-end delivery of a practical Project Manager tool using AI (**Claude** and **Gemini**) — from defining product logic to publishing ready-to-use installers for macOS and Windows.
 
-<img width="850" alt="Інтерфейс Project Cost Calculator" src="https://github.com/user-attachments/assets/25c88530-15a0-4902-bec3-9e7ea464d5b8" />
+<img width="850" alt="Project Cost Calculator Interface" src="https://github.com/user-attachments/assets/25c88530-15a0-4902-bec3-9e7ea464d5b8" />
 
 <details>
-<summary><b>Показати додаткові скріншоти інтерфейсу</b></summary>
+<summary><b>Show additional interface screenshots</b></summary>
 <br>
-<img width="850" alt="Деталі розрахунку" src="https://github.com/user-attachments/assets/b167b5ea-1af3-48db-a8c6-21f2b8662dee" />
-<img width="850" alt="Налаштування параметрів" src="https://github.com/user-attachments/assets/f2a6a137-487e-49da-896e-10e0e49905cc" />
-<img width="850" alt="Підсумковий бюджет" src="https://github.com/user-attachments/assets/5755685a-2984-4f8c-b105-f595ef4592f0" />
+<img width="850" alt="Parameter settings" src="https://github.com/user-attachments/assets/f2a6a137-487e-49da-896e-10e0e49905cc" />
+<img width="850" alt="Calculation details" src="https://github.com/user-attachments/assets/b167b5ea-1af3-48db-a8c6-21f2b8662dee" />
+<img width="850" alt="Final budget summary" src="https://github.com/user-attachments/assets/5755685a-2984-4f8c-b105-f595ef4592f0" />
 </details>
 
-## Для чого цей інструмент
+## What This Tool Does
 
-Калькулятор допомагає за хвилину сформувати попередню оцінку бюджету розробки:
+The calculator helps a Project Manager generate a preliminary development budget estimate in under a minute:
 
-- **Розрахунок за ролями команди:** окреме планування для **QA**, **Dev 1**, **Dev 2** та **Content Manager**.
-- **Гнучкі параметри:** швидке коригування кількості годин і погодинних ставок (`$/год`).
-- **Управління ризиками:** додавання буфера у відсотках (`%`) із миттєвим перерахунком фінальної вартості.
-- **Повна приватність та офлайн-робота:** додаток працює локально на комп'ютері без інтернету, реєстрацій та передачі даних на сторонні сервери.
-
----
-
-## Як завантажити та протестувати
-
-Готові файли для встановлення знаходяться у розділі **[Releases](https://github.com/max-kravchenko27/project-cost-calculator-forCV/releases)**:
-
-### Для macOS
-1. Завантажте файл `.dmg` під ваш процесор:
-   - `Project.Cost.Calculator-1.0.0-arm64.dmg` — для сучасних MacBook на чипах Apple Silicon (M1–M4);
-   - `Project.Cost.Calculator-1.0.0.dmg` — для старіших Mac на процесорах Intel.
-2. Відкрийте завантажений файл і перетягніть іконку програми у папку **«Програми» (Applications)**.
-3. **При першому запуску:** оскільки додаток випущено без платного сертифіката розробника Apple, macOS може заблокувати відкриття. Натисніть **Done**, перейдіть у *Системні налаштування → Конфіденційність і безпека* та внизу вікна натисніть **«Все одно відкрити»**.
-
-### Для Windows
-1. Завантажте файл `Project.Cost.Calculator.Setup.1.0.0.exe` та запустіть його.
-2. Якщо система покаже попередження безпеки Windows SmartScreen, натисніть **«Докладніше» → «Виконати в будь-якому разі»**.
+- **Role-Based Estimation:** separate planning for **QA**, **Dev 1**, **Dev 2**, and **Content Manager**.
+- **Flexible Parameters:** quick adjustments for hours and hourly rates (`$/hr`).
+- **Risk Management:** percentage buffer (`%`) with instant recalculation of the final project cost.
+- **Full Privacy & Offline Mode:** runs locally on your machine with no internet connection, sign-ups, or third-party data sharing.
 
 ---
 
-## Як створено проєкт
+## How to Download & Test
 
-- **AI-розробка:** проєктування логіки, написання коду та налаштування релізів виконано за допомогою **Claude** та **Gemini**.
-- **Технології:** Electron, JavaScript, HTML, CSS.
-- **Автоматизація релізів:** налаштовано GitHub Actions для автоматичної збірки програми одночасно під macOS та Windows.
+Ready-to-use installers are available in the **[Releases](https://github.com/max-kravchenko27/project-cost-calculator-forCV/releases)** section:
+
+### For macOS
+1. Download the `.dmg` file matching your processor:
+   - `Project.Cost.Calculator-1.0.0-arm64.dmg` — for modern MacBooks with Apple Silicon chips (M1–M4);
+   - `Project.Cost.Calculator-1.0.0.dmg` — for older Intel-based Macs.
+2. Open the downloaded file and drag the app icon into your **Applications** folder.
+3. **First launch:** since the app is distributed without a paid Apple Developer certificate, macOS may block it initially. Click **Done**, open *System Settings → Privacy & Security*, scroll down, and click **Open Anyway**.
+
+### For Windows
+1. Download `Project.Cost.Calculator.Setup.1.0.0.exe` and run it.
+2. If Windows SmartScreen displays a security warning, click **More info → Run anyway**.
+
+---
+
+## How It Was Built
+
+- **AI-Driven Development:** product logic design, coding, and release configuration were executed using **Claude** and **Gemini**.
+- **Tech Stack:** Electron, JavaScript, HTML, CSS.
+- **Release Automation:** configured GitHub Actions CI/CD pipeline to automatically build installers for both macOS and Windows.
